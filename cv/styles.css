@@ -1,0 +1,80 @@
+body{
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header{
+  background-color: #084387;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+.info{
+  display: inline-block;
+  width: 400px;
+}
+
+.nombre{
+  font-weight:700;
+}
+
+.profess{
+  font-weight: 200;
+}
+
+.descrip{
+  background-color: #049428;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.section{
+  width: 960px;
+  height: 200px;
+  margin: 0px auto;
+}
+
+h3{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.concept{
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 36px;
+}
+
+dd{
+  margin: 0px;
+}
+
+#part{
+  margin-top: 70px;
+}
+
+ul{
+  margin-top: 12px;
+  padding: 0px;
+}
+
+li{
+  margin-top: 16px;
+}
+
+#education{
+  display: inline-block;
+  width: 65%;
+  vertical-align: top; /*con esta propieda alineamos verticalmente los elementos*/
+}
+
+#img{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+img{
+  width: 150px;
+}
