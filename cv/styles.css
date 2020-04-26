@@ -10,7 +10,7 @@ header{
 }
 .info{
   display: inline-block;
-  width: 400px;
+  width: 35%;
 }
 
 .nombre{
@@ -29,7 +29,7 @@ header{
 }
 
 .section{
-  width: 960px;
+  width: 70%;
   height: 200px;
   margin: 0px auto;
 }
