@@ -1,0 +1,207 @@
+/* COLORES
+VERDE EFTALO  #213123;
+CAOBA c44900;
+ BERMELLON e70e02;*/
+
+/* Gradiente extradido de pagina */
+*{
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: #44c71c;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+a:focus{
+  background-color: red;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.container{
+  background: #213123;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #213123, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  max-width: 960px;
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+/*  box-shadow: diferenciaHorizontal diferenciavertical desenfoqeu amplitud color*/
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+border-radius: 4px;
+/* Definmos est elemento relative para que a la hora de definir el elelento actions como absolute ste se hubique relativamente a este qu ees su padre */
+position: relative;
+transition: all 200ms;
+/* COn esta propiedad podemos hacer que el contenido de un elemento en este caso el texto si se sale del contenedor, este contenido se reagrupara dentro del contendor utilizando las diferecntes opciones que da la propiedad overflow, que en este caso como el contnido sobre sale se generara un scroll vertical qeu haga ver todo el contenido dentro del contenedor */
+overflow: scroll;
+}
+
+.content{
+  padding: 1em;
+}
+
+td{
+  display: block;
+  width: 100%;
+}
+/* .table td:nth-child(1){
+  background-color:  #c44900;
+  color: black;
+} */
+
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  background-color: #c44900;
+}
+
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  color: black;
+  border-radius: 50%;
+  background-color: #c44900;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.fa-star{
+  color:  #ffc400;
+}
+
+.table{
+  width: 100%;
+  border-spacing: 0;/*Con esto modificamos el espacio entre las celdas de la tabla que por defecto tiene 2 px*/
+}
+
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+
+.item-title{
+  border-bottom: 2px solid #c44900;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.position{
+  background-color: #c44900;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.logo{
+  font-size: 8em;
+  float: left;
+  margin-right: 0.5em;
+  margin-left: 0.46em;
+}
+
+.item-logo{
+  font-weight: bold;
+  color: #c44900;
+  font-size: 1.2em;
+}
+
+#descrip{
+  color: #c44900;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 1em;
+  /* como este es un elemento en linea no toma los margenes de arriba y abajo por eso es necesario darle display block o inline-block */
+  display: inline-block;
+}
+
+p{
+  line-height: 1em;
+}
+
+.fa-node{
+  color: #026E00;
+}
+
+.fa-python{
+  color: #1F4361;
+}
+
+.fa-java{
+  color: #D20001;
+}
+
+.fa-js{
+  color: #F7DF1E;
+}
+
+.fa-php{
+  color:black ;
+  background-color:#777BB3;
+}
+
+@media (min-width:900px){
+  th{
+    /* Esta propiedad le da a los elemntos una organizacion de tabla */
+    display: table-cell;
+  }
+
+  td{
+    width: auto;
+    display: table-cell;
+  }
+
+  /*Con esta propiedad lo que hacemos s seleccionar los elementos tr que sean pares con la seudoclase nth-child que agregandole el parametro even nos selecciona los elementos tr paares y con el parametro add se seleccionan los elementos tr impares*/
+   tr:nth-child(even){
+    background-color: #c44900;
+  }
+
+  td:nth-of-type(1){
+    font-size: 1em;
+    background-color: inherit;
+  }
+
+  .content{
+    padding: 1.8em;
+  }
+}
+
+@media (min-height:550px)) {
+  .content{
+    height: 500px;
+  }
+}
