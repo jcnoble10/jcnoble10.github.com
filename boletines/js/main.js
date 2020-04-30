@@ -57,7 +57,7 @@ links.forEach(function(link){
      content.classList.add("animated");
 
      setTimeout(function(){
-       location.href = "/boletines";
+       location.href = "./boletines/index.html";
        /*
        Este seria el direccionamiento estando en mi equipo(local)
        location.href = "../index.html";
